@@ -1,0 +1,38 @@
+.modal-container {
+  position: fixed;
+  top:  0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  pointer-events: none;
+}
+
+.modal-container.open {
+  opacity: 1;
+  pointer-events: auto;
+  overflow: auto;
+}
+
+.modal-container .modal {
+  margin: 10rem auto 4rem auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 4rem;
+  padding: 2rem 2.5rem 0rem 2.5rem;
+  transform: scaleY(0);
+  transition: transform 1s ease-in;
+}
+
+.modal-container .modal.open {
+  transform: scaleY(1);
+}
+
+.modal-container .modal > .close {
+  align-self: flex-end;
+}

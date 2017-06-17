@@ -1,0 +1,33 @@
+.test-modal {
+  animation: 400ms modal-appear;
+}
+
+.test-modal header {
+  padding: 1.4rem 0;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.test-modal main .name {
+  width: 28.5rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbcbcb;
+  color: #555;
+  font-weight: normal;
+}
+
+.test-modal footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.4rem 0 3rem;
+  margin-top: 4rem;
+  border-top: 1px solid #EEEEEE;
+}
+
+
+@keyframes modal-appear {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

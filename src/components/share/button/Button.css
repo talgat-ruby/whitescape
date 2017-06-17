@@ -1,0 +1,20 @@
+.button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color:  #87bae1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  padding: 1.2rem 2.2rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+
+.button.green {
+  background-color: #52d58b;
+}
+
+.button:hover{
+    opacity: 0.7;
+}

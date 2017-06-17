@@ -1,0 +1,12 @@
+.close {
+  display: grid;
+  height: 2rem;
+  width: 2rem;
+  fill: #CCCCCC;
+}
+
+.close:hover {
+  cursor: pointer;
+  fill: #121212;
+}
+
